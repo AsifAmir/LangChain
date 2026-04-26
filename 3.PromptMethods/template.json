@@ -1,0 +1,21 @@
+{
+  "lc": 1,
+  "type": "constructor",
+  "id": [
+    "langchain",
+    "prompts",
+    "prompt",
+    "PromptTemplate"
+  ],
+  "kwargs": {
+    "input_variables": [
+      "length_input",
+      "paper_input",
+      "style_input"
+    ],
+    "template": "\nYou are an expert AI research assistant specializing in explaining academic papers clearly and accurately.\n\nYour task is to summarize the research paper titled \"{paper_input}\" according to the following specifications:\n\n-----------------------------------------------------------------\nSUMMARY PREFERENCES\n-----------------------------------------------------------------\n- Explanation Style  : {style_input}\n- Explanation Length : {length_input}\n\n-----------------------------------------------------------------\nSUMMARY STRUCTURE\n-----------------------------------------------------------------\n\n1. Overview\n   - What is the paper about?\n   - What problem does it solve?\n   - Why is it significant in the field?\n\n2. Core Idea and Approach\n   - Explain the main idea or methodology in simple terms.\n   - Use relatable analogies to simplify complex concepts.\n\n3. Mathematical Details (if applicable)\n   - Include key equations or formulas from the paper.\n   - Briefly explain what each equation represents.\n   - Where helpful, illustrate with a short intuitive code snippet.\n\n4. Results and Findings\n   - What were the key results or benchmarks?\n   - How did it compare to previous approaches?\n\n5. Impact and Applications\n   - What real-world problems can this paper help solve?\n   - What future research directions does it open up?\n\n-----------------------------------------------------------------\nIMPORTANT GUIDELINES\n-----------------------------------------------------------------\n- Strictly follow the requested explanation style ({style_input}) throughout.\n- Keep the response within the requested length ({length_input}).\n- If any specific information is not available in the paper, respond with:\n  \"Insufficient information available\" \u2014 do NOT guess or hallucinate.\n- Ensure the summary is clear, accurate, and well-structured.\n",
+    "template_format": "f-string",
+    "validate_template": true
+  },
+  "name": "PromptTemplate"
+}
