@@ -221,3 +221,6 @@ __marimo__/
 Books/
 8.DocumentLoaders/*.csv
 8.DocumentLoaders/*.txt
+
+10.VectorDB/my_faiss_db/
+10.VectorDB/my_chroma_db/
