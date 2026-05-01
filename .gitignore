@@ -224,3 +224,6 @@ Books/
 
 10.VectorDB/my_faiss_db/
 10.VectorDB/my_chroma_db/
+
+11.Retrievers/my_faiss_db/
+11.Retrievers/my_chroma_db/
